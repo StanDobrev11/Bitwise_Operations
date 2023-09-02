@@ -104,28 +104,28 @@ def binary_to_hexadecimal(bin_num: str) -> str:
     return decimal_to_hexadecimal(result)
 
 
-num = input("Enter number in decimal, binary or hexadecimal: ")
-operation = input("Select operation: \n"
-                  "Binary to Decimal (1) or \n"
-                  "Decimal to Binary (2) or \n"
-                  "Hexadecimal to Decimal(3) or \n"
-                  "Decimal to Hexadecimal(4) or \n"
-                  "Hexadecimal to Binary(5) or \n"
-                  "Binary to Hexadecimal(6): ").lower()
-
-if operation == '1':
-    print(binary_to_decimal(num))
-elif operation == '2':
-    num = int(num)
-    print(decimal_to_binary(num))
-elif operation == '3':
-    print(hexadecimal_to_decimal(num))
-elif operation == '4':
-    num = int(num)
-    print(decimal_to_hexadecimal(num))
-elif operation == '5':
-    print(hexadecimal_to_binary(num))
-elif operation == '6':
-    print(binary_to_hexadecimal(num))
-else:
-    print("Wrong input")
+# num = input("Enter number in decimal, binary or hexadecimal: ")
+# operation = input("Select operation: \n"
+#                   "Binary to Decimal (1) or \n"
+#                   "Decimal to Binary (2) or \n"
+#                   "Hexadecimal to Decimal(3) or \n"
+#                   "Decimal to Hexadecimal(4) or \n"
+#                   "Hexadecimal to Binary(5) or \n"
+#                   "Binary to Hexadecimal(6): ").lower()
+#
+# if operation == '1':
+#     print(binary_to_decimal(num))
+# elif operation == '2':
+#     num = int(num)
+#     print(decimal_to_binary(num))
+# elif operation == '3':
+#     print(hexadecimal_to_decimal(num))
+# elif operation == '4':
+#     num = int(num)
+#     print(decimal_to_hexadecimal(num))
+# elif operation == '5':
+#     print(hexadecimal_to_binary(num))
+# elif operation == '6':
+#     print(binary_to_hexadecimal(num))
+# else:
+#     print("Wrong input")
