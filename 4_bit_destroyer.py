@@ -1,16 +1,19 @@
 """
-Write a program that sets the bit at position n to 0. Print the resulting integer.
+Write a program that sets the bit at position n to 0 or 1. Print the resulting integer.
+n = n & ~(1 << p) | (b << p) where b is a bit in range 0 - 1.
 """
-
-from numeric_system_converter import decimal_to_binary, binary_to_decimal
 
 number = int(input())
 position = int(input())
+bit_to = int(input())
 
-int_as_binary = decimal_to_binary(number)
+print(f"{number:b}")
+mask_1 = ~(1 << position)
+print(f"{mask_1:b}")
+mask_2 = (bit_to << position)
+print(f"{mask_2:b}")
 
-position = len(int_as_binary) - position - 1
+n = number & mask_1 | mask_2
+print(f"{n:b}")
+print(n)
 
-int_as_binary = int_as_binary[:position] + '0' + int_as_binary[position + 1:]
-decimal = binary_to_decimal(int_as_binary)
-print(decimal)
